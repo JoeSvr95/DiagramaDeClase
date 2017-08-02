@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="DS2017-G7">
+  <ClassDiagramComponents>
+    <Class name="AgregarPlatilloController" package="sistemasbares" visibility="public" xPosition="47.0" yPosition="17.0">
+      <Fields>
+        <Field name="txtNombre" type="TextField" visibility="private"/>
+        <Field name="txtCategoria" type="TextField" visibility="private"/>
+        <Field name="txtDescripcion" type="TextArea" visibility="private"/>
+        <Field name="cmbServido" type="ComboBox" visibility="private"/>
+        <Field name="cmbTipo" type="ComboBox" visibility="private"/>
+        <Field name="btnGuardar" type="Button" visibility="private"/>
+        <Field name="btnLimpiar" type="Button" visibility="private"/>
+        <Field name="txtIngredientes" type="TextArea" visibility="private"/>
+        <Field name="imgImagen" type="ImageView" visibility="private"/>
+        <Field name="cargarImagen" type="Button" visibility="private"/>
+        <Field name="txtTemp" type="TextField" visibility="private"/>
+        <Field name="cmbRestaurante" type="ComboBox" visibility="private"/>
+        <Field name="datosImagen" type="String[]" visibility="private"/>
+        <Field name="foto" type="File" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="initialize" returnType="void" visibility="public">
+          <Argument type="URL" name="url"/>
+          <Argument type="ResourceBundle" name="rb"/>
+        </Method>
+        <Method name="guardarPlatillo" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="limpiar" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="cargarImagen" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="limpiar" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="AsistenteController" package="sistemasbares" visibility="public" xPosition="25.0" yPosition="554.0">
+      <Fields>
+        <Field name="menuBar" type="MenuBar" visibility="private"/>
+        <Field name="menuAgregarPlatillo" type="Menu" visibility="private"/>
+        <Field name="menuPlatillos" type="MenuItem" visibility="private"/>
+        <Field name="menuListarPlatillos" type="MenuItem" visibility="private"/>
+        <Field name="menuCategorias" type="Menu" visibility="private"/>
+        <Field name="menuMostrarPlatillo" type="MenuItem" visibility="private"/>
+        <Field name="menuLogOut" type="Menu" visibility="private"/>
+        <Field name="loaderPane" type="StackPane" visibility="private"/>
+        <Field name="menuPlatillo" type="MenuItem" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="showAgregarPlatillo" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="showListarPlatillos" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="showListarCategoriasASIS" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="initialize" returnType="void" visibility="public">
+          <Argument type="URL" name="url"/>
+          <Argument type="ResourceBundle" name="rb"/>
+        </Method>
+        <Method name="cerrarSesion" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="cerrar" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="BuscarController" package="sistemasbares" visibility="public" xPosition="892.0" yPosition="864.0">
+      <Fields>
+        <Field name="txtBusqueda" type="TextField" visibility="private"/>
+        <Field name="btnBuscar" type="Button" visibility="private"/>
+        <Field name="lstPlatillos" type="ListView" visibility="private"/>
+        <Field name="txtDescripcion" type="TextArea" visibility="private"/>
+        <Field name="txtIngredientes" type="TextArea" visibility="private"/>
+        <Field name="imgImagen" type="ImageView" visibility="private"/>
+        <Field name="lblNombre" type="Label" visibility="private"/>
+        <Field name="btnMostrarInfo" type="Button" visibility="private"/>
+        <Field name="lblCategoria" type="Label" visibility="private"/>
+        <Field name="lstRestaurante" type="ListView" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="initialize" returnType="void" visibility="public">
+          <Argument type="URL" name="url"/>
+          <Argument type="ResourceBundle" name="rb"/>
+        </Method>
+        <Method name="buscar" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="showMostrarInfo" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="limpiar" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="ClienteController" package="sistemasbares" visibility="public" xPosition="870.0" yPosition="474.0">
+      <Fields>
+        <Field name="menuBar" type="MenuBar" visibility="private"/>
+        <Field name="menuBuscar" type="Menu" visibility="private"/>
+        <Field name="menuLogOut" type="Menu" visibility="private"/>
+        <Field name="loaderPane" type="StackPane" visibility="private"/>
+        <Field name="menuClategorias" type="Menu" visibility="private"/>
+        <Field name="menuListCategoria" type="MenuItem" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="showListarCategoriasCLIE" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="initialize" returnType="void" visibility="public">
+          <Argument type="URL" name="url"/>
+          <Argument type="ResourceBundle" name="rb"/>
+        </Method>
+        <Method name="showBuscar" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="cerrarSesion" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="cerrar" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Conexion" package="sistemasbares" visibility="public" xPosition="843.0" yPosition="73.0">
+      <Fields>
+        <Field name="connection" type="Connection" visibility="public" isStatic="true"/>
+        <Field name="statement" type="Statement" visibility="public" isStatic="true"/>
+        <Field name="result" type="ResultSet" visibility="public" isStatic="true"/>
+        <Field name="procedure" type="CallableStatement" visibility="public" isStatic="true"/>
+        <Field name="asisRest" type="String" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ListarCategoriasASISController" package="sistemasbares" visibility="public" xPosition="47.0" yPosition="1126.0">
+      <Fields>
+        <Field name="lstPlatillos" type="ListView" visibility="private"/>
+        <Field name="txtDescripcion" type="TextArea" visibility="private"/>
+        <Field name="txtIngredientes" type="TextArea" visibility="private"/>
+        <Field name="txtNombre" type="TextField" visibility="private"/>
+        <Field name="txtCategoria" type="TextField" visibility="private"/>
+        <Field name="imgImagen" type="ImageView" visibility="private"/>
+        <Field name="btnModificar" type="Button" visibility="private"/>
+        <Field name="btnGuardar" type="Button" visibility="private"/>
+        <Field name="btnLimpiar" type="Button" visibility="private"/>
+        <Field name="btnCargarIMG" type="Button" visibility="private"/>
+        <Field name="cmbCategorias" type="ComboBox" visibility="private"/>
+        <Field name="btnMostrarInfo" type="Button" visibility="private"/>
+        <Field name="lstRestaurante" type="ListView" visibility="private"/>
+        <Field name="datosImagen" type="String[]" visibility="private"/>
+        <Field name="id_plato" type="String" visibility="private"/>
+        <Field name="foto" type="File" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="initialize" returnType="void" visibility="public">
+          <Argument type="URL" name="url"/>
+          <Argument type="ResourceBundle" name="rb"/>
+        </Method>
+        <Method name="mostrarInfo" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="cargarListView" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="modificar" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="limpiar" returnType="void" visibility="private"/>
+        <Method name="deshabilitar" returnType="void" visibility="private"/>
+        <Method name="cargarFoto" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="modificarPlatillo" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ListarCategoriasCLIEController" package="sistemasbares" visibility="public" xPosition="1294.0" yPosition="446.0">
+      <Fields>
+        <Field name="cmbCategorias" type="ComboBox" visibility="private"/>
+        <Field name="lstPlatillos" type="ListView" visibility="private"/>
+        <Field name="txtDescripcion" type="TextArea" visibility="private"/>
+        <Field name="imgImagen" type="ImageView" visibility="private"/>
+        <Field name="lblNombre" type="Label" visibility="private"/>
+        <Field name="lblRestaurante" type="Label" visibility="private"/>
+        <Field name="lblCateogoria" type="Label" visibility="private"/>
+        <Field name="txtIngredientes" type="TextArea" visibility="private"/>
+        <Field name="btnMostrarInfo" type="Button" visibility="private"/>
+        <Field name="lstRestaurante" type="ListView" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="initialize" returnType="void" visibility="public">
+          <Argument type="URL" name="url"/>
+          <Argument type="ResourceBundle" name="rb"/>
+        </Method>
+        <Method name="mostrarInformacion" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="cargarListView" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="limpiar" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="ListarPlatillosController" package="sistemasbares" visibility="public" xPosition="516.0" yPosition="735.0">
+      <Fields>
+        <Field name="lstPlatillos" type="ListView" visibility="private"/>
+        <Field name="txtDescripcion" type="TextArea" visibility="private"/>
+        <Field name="txtIngredientes" type="TextArea" visibility="private"/>
+        <Field name="txtNombre" type="TextField" visibility="private"/>
+        <Field name="txtCategoria" type="TextField" visibility="private"/>
+        <Field name="imgImagen" type="ImageView" visibility="private"/>
+        <Field name="btnModificar" type="Button" visibility="private"/>
+        <Field name="btnGuardar" type="Button" visibility="private"/>
+        <Field name="btnLimpiar" type="Button" visibility="private"/>
+        <Field name="btnCargarIMG" type="Button" visibility="private"/>
+        <Field name="btnMostrarInfo" type="Button" visibility="private"/>
+        <Field name="lstRestaurante" type="ListView" visibility="private"/>
+        <Field name="datosImagen" type="String[]" visibility="private"/>
+        <Field name="id_plato" type="String" visibility="private"/>
+        <Field name="foto" type="File" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="initialize" returnType="void" visibility="public">
+          <Argument type="URL" name="url"/>
+          <Argument type="ResourceBundle" name="rb"/>
+        </Method>
+        <Method name="mostrarInfo" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="modificar" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="limpiar" returnType="void" visibility="private"/>
+        <Method name="deshabilitar" returnType="void" visibility="private"/>
+        <Method name="cargarFoto" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="modificarPlatillo" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LogginController" package="sistemasbares" visibility="public" xPosition="478.0" yPosition="329.0">
+      <Fields>
+        <Field name="lblNada" type="Label" visibility="private"/>
+        <Field name="txtUsuario" type="TextField" visibility="private"/>
+        <Field name="txtPassword" type="PasswordField" visibility="private"/>
+        <Field name="btnIngresar" type="Button" visibility="private"/>
+        <Field name="lblUsuario" type="Label" visibility="private"/>
+        <Field name="lblContrasenia" type="Label" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="showMenu" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+          <Argument type="String" name="fxmlDocument"/>
+        </Method>
+        <Method name="loggin" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="initialize" returnType="void" visibility="public">
+          <Argument type="URL" name="url"/>
+          <Argument type="ResourceBundle" name="rb"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Main" package="sistemasbares" visibility="public" xPosition="553.0" yPosition="64.0">
+      <Fields>
+        <Field name="root" type="Parent" visibility="private" isStatic="true"/>
+        <Field name="scene" type="Scene" visibility="private" isStatic="true"/>
+        <Field name="stage" type="Stage" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="start" returnType="void" visibility="public">
+          <Argument type="Stage" name="stage"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="logout" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="Usa" source="sistemasbares.Main" target="sistemasbares.LogginController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarCategoriasASISController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.BuscarController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.AsistenteController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.Main" target="sistemasbares.Conexion" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.ClienteController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.ListarCategoriasCLIEController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarPlatillosController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.AgregarPlatilloController" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
