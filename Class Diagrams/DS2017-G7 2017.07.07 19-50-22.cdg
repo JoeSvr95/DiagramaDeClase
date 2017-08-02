@@ -252,7 +252,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="LogginController" package="sistemasbares" visibility="public" xPosition="478.0" yPosition="329.0">
+    <Class name="LogginController" package="sistemasbares" visibility="public" xPosition="478.0" yPosition="388.0">
       <Fields>
         <Field name="lblNada" type="Label" visibility="private"/>
         <Field name="txtUsuario" type="TextField" visibility="private"/>
@@ -295,14 +295,14 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <UseRelation name="Usa" source="sistemasbares.Main" target="sistemasbares.LogginController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarCategoriasASISController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.BuscarController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.AsistenteController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.Main" target="sistemasbares.Conexion" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarPlatillosController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.ClienteController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.ListarCategoriasCLIEController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarPlatillosController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Tiene" source="sistemasbares.Main" target="sistemasbares.LogginController" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarCategoriasASISController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.AsistenteController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.AgregarPlatilloController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.Main" target="sistemasbares.Conexion" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
