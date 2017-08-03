@@ -21,17 +21,17 @@
       </Fields>
       <Constructors/>
       <Methods>
-        <Method name="initialize" returnType="void" visibility="public">
+        <Method name="initialize" returnType="ResourceBundle" visibility="public">
           <Argument type="URL" name="url"/>
           <Argument type="ResourceBundle" name="rb"/>
         </Method>
-        <Method name="guardarPlatillo" returnType="void" visibility="private">
+        <Method name="guardarPlatillo" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="limpiar" returnType="void" visibility="private">
+        <Method name="limpiar" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="cargarImagen" returnType="void" visibility="private">
+        <Method name="cargarImagen" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
         <Method name="limpiar" returnType="void" visibility="private"/>
@@ -51,23 +51,23 @@
       </Fields>
       <Constructors/>
       <Methods>
-        <Method name="showAgregarPlatillo" returnType="void" visibility="private">
+        <Method name="showAgregarPlatillo" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="showListarPlatillos" returnType="void" visibility="private">
+        <Method name="showListarPlatillos" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="showListarCategoriasASIS" returnType="void" visibility="private">
+        <Method name="showListarCategoriasASIS" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="initialize" returnType="void" visibility="public">
+        <Method name="initialize" returnType="ResourceBundle" visibility="public">
           <Argument type="URL" name="url"/>
           <Argument type="ResourceBundle" name="rb"/>
         </Method>
-        <Method name="cerrarSesion" returnType="void" visibility="private">
+        <Method name="cerrarSesion" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="cerrar" returnType="void" visibility="private">
+        <Method name="cerrar" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
       </Methods>
@@ -87,14 +87,14 @@
       </Fields>
       <Constructors/>
       <Methods>
-        <Method name="initialize" returnType="void" visibility="public">
+        <Method name="initialize" returnType="ResourceBundle" visibility="public">
           <Argument type="URL" name="url"/>
           <Argument type="ResourceBundle" name="rb"/>
         </Method>
-        <Method name="buscar" returnType="void" visibility="private">
+        <Method name="buscar" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="showMostrarInfo" returnType="void" visibility="private">
+        <Method name="showMostrarInfo" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
         <Method name="limpiar" returnType="void" visibility="private"/>
@@ -111,34 +111,23 @@
       </Fields>
       <Constructors/>
       <Methods>
-        <Method name="showListarCategoriasCLIE" returnType="void" visibility="private">
+        <Method name="showListarCategoriasCLIE" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="initialize" returnType="void" visibility="public">
+        <Method name="initialize" returnType="ResourceBundle" visibility="public">
           <Argument type="URL" name="url"/>
           <Argument type="ResourceBundle" name="rb"/>
         </Method>
-        <Method name="showBuscar" returnType="void" visibility="private">
+        <Method name="showBuscar" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="cerrarSesion" returnType="void" visibility="private">
+        <Method name="cerrarSesion" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="cerrar" returnType="void" visibility="private">
+        <Method name="cerrar" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
       </Methods>
-    </Class>
-    <Class name="Conexion" package="sistemasbares" visibility="public" xPosition="843.0" yPosition="73.0">
-      <Fields>
-        <Field name="connection" type="Connection" visibility="public" isStatic="true"/>
-        <Field name="statement" type="Statement" visibility="public" isStatic="true"/>
-        <Field name="result" type="ResultSet" visibility="public" isStatic="true"/>
-        <Field name="procedure" type="CallableStatement" visibility="public" isStatic="true"/>
-        <Field name="asisRest" type="String" visibility="public" isStatic="true"/>
-      </Fields>
-      <Constructors/>
-      <Methods/>
     </Class>
     <Class name="ListarCategoriasASISController" package="sistemasbares" visibility="public" xPosition="47.0" yPosition="1126.0">
       <Fields>
@@ -161,25 +150,25 @@
       </Fields>
       <Constructors/>
       <Methods>
-        <Method name="initialize" returnType="void" visibility="public">
+        <Method name="initialize" returnType="ResourceBundle" visibility="public">
           <Argument type="URL" name="url"/>
           <Argument type="ResourceBundle" name="rb"/>
         </Method>
-        <Method name="mostrarInfo" returnType="void" visibility="private">
+        <Method name="mostrarInfo" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="cargarListView" returnType="void" visibility="private">
+        <Method name="cargarListView" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="modificar" returnType="void" visibility="private">
+        <Method name="modificar" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
         <Method name="limpiar" returnType="void" visibility="private"/>
         <Method name="deshabilitar" returnType="void" visibility="private"/>
-        <Method name="cargarFoto" returnType="void" visibility="private">
+        <Method name="cargarFoto" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="modificarPlatillo" returnType="void" visibility="private">
+        <Method name="modificarPlatillo" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
       </Methods>
@@ -199,14 +188,14 @@
       </Fields>
       <Constructors/>
       <Methods>
-        <Method name="initialize" returnType="void" visibility="public">
+        <Method name="initialize" returnType="ResourceBundle" visibility="public">
           <Argument type="URL" name="url"/>
           <Argument type="ResourceBundle" name="rb"/>
         </Method>
-        <Method name="mostrarInformacion" returnType="void" visibility="private">
+        <Method name="mostrarInformacion" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="cargarListView" returnType="void" visibility="private">
+        <Method name="cargarListView" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
         <Method name="limpiar" returnType="void" visibility="private"/>
@@ -232,27 +221,27 @@
       </Fields>
       <Constructors/>
       <Methods>
-        <Method name="initialize" returnType="void" visibility="public">
+        <Method name="initialize" returnType="ResourceBundle" visibility="public">
           <Argument type="URL" name="url"/>
           <Argument type="ResourceBundle" name="rb"/>
         </Method>
-        <Method name="mostrarInfo" returnType="void" visibility="private">
+        <Method name="mostrarInfo" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="modificar" returnType="void" visibility="private">
+        <Method name="modificar" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
         <Method name="limpiar" returnType="void" visibility="private"/>
         <Method name="deshabilitar" returnType="void" visibility="private"/>
-        <Method name="cargarFoto" returnType="void" visibility="private">
+        <Method name="cargarFoto" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="modificarPlatillo" returnType="void" visibility="private">
+        <Method name="modificarPlatillo" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
       </Methods>
     </Class>
-    <Class name="LogginController" package="sistemasbares" visibility="public" xPosition="478.0" yPosition="388.0">
+    <Class name="LogginController" package="sistemasbares" visibility="public" xPosition="453.0" yPosition="410.0">
       <Fields>
         <Field name="lblNada" type="Label" visibility="private"/>
         <Field name="txtUsuario" type="TextField" visibility="private"/>
@@ -263,20 +252,20 @@
       </Fields>
       <Constructors/>
       <Methods>
-        <Method name="showMenu" returnType="void" visibility="private">
+        <Method name="showMenu" returnType="String" visibility="private">
           <Argument type="ActionEvent" name="event"/>
           <Argument type="String" name="fxmlDocument"/>
         </Method>
-        <Method name="loggin" returnType="void" visibility="private">
+        <Method name="loggin" returnType="ActionEvent" visibility="private">
           <Argument type="ActionEvent" name="event"/>
         </Method>
-        <Method name="initialize" returnType="void" visibility="public">
+        <Method name="initialize" returnType="ResourceBundle" visibility="public">
           <Argument type="URL" name="url"/>
           <Argument type="ResourceBundle" name="rb"/>
         </Method>
       </Methods>
     </Class>
-    <Class name="Main" package="sistemasbares" visibility="public" xPosition="553.0" yPosition="64.0">
+    <Class name="Main" package="sistemasbares" visibility="public" xPosition="421.0" yPosition="66.0">
       <Fields>
         <Field name="root" type="Parent" visibility="private" isStatic="true"/>
         <Field name="scene" type="Scene" visibility="private" isStatic="true"/>
@@ -284,25 +273,42 @@
       </Fields>
       <Constructors/>
       <Methods>
-        <Method name="start" returnType="void" visibility="public">
+        <Method name="start" returnType="Stage" visibility="public">
           <Argument type="Stage" name="stage"/>
         </Method>
-        <Method name="main" returnType="void" visibility="public" isStatic="true">
+        <Method name="main" returnType="String[]" visibility="public" isStatic="true">
           <Argument type="String[]" name="args"/>
         </Method>
         <Method name="logout" returnType="void" visibility="public" isStatic="true"/>
       </Methods>
     </Class>
+    <Class name="Conexion" package="" visibility="public" xPosition="665.0" yPosition="66.0">
+      <Fields>
+        <Field name="instance" type="Conexion" visibility="private" isStatic="true"/>
+        <Field name="procedure" type="CallableStatement" visibility="private" isStatic="true"/>
+        <Field name="result" type="ResultSet" visibility="private" isStatic="true"/>
+        <Field name="connection" type="Connection" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getInstancia" returnType="Conexion" visibility="public"/>
+        <Method name="getConnection" returnType="Connection" visibility="public"/>
+        <Method name="getResult" returnType="ResultSet" visibility="public"/>
+        <Method name="getProcedure" returnType="CallableStatement" visibility="public"/>
+      </Methods>
+    </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
+    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.AsistenteController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.ListarCategoriasCLIEController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Tiene" source="sistemasbares.LogginController" target="Conexion" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.Main" target="sistemasbares.LogginController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.BuscarController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarPlatillosController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.ClienteController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.ListarCategoriasCLIEController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Tiene" source="sistemasbares.Main" target="sistemasbares.LogginController" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarCategoriasASISController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.AsistenteController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.AgregarPlatilloController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.Main" target="sistemasbares.Conexion" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
