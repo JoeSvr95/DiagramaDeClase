@@ -241,7 +241,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="LogginController" package="sistemasbares" visibility="public" xPosition="453.0" yPosition="410.0">
+    <Class name="LogginController" package="sistemasbares" visibility="public" xPosition="454.0" yPosition="418.0">
       <Fields>
         <Field name="lblNada" type="Label" visibility="private"/>
         <Field name="txtUsuario" type="TextField" visibility="private"/>
@@ -265,7 +265,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Main" package="sistemasbares" visibility="public" xPosition="421.0" yPosition="66.0">
+    <Class name="Main" package="sistemasbares" visibility="public" xPosition="759.0" yPosition="82.0">
       <Fields>
         <Field name="root" type="Parent" visibility="private" isStatic="true"/>
         <Field name="scene" type="Scene" visibility="private" isStatic="true"/>
@@ -282,7 +282,7 @@
         <Method name="logout" returnType="void" visibility="public" isStatic="true"/>
       </Methods>
     </Class>
-    <Class name="Conexion" package="" visibility="public" xPosition="665.0" yPosition="66.0">
+    <Class name="Conexion" package="" visibility="public" xPosition="442.0" yPosition="53.0">
       <Fields>
         <Field name="instance" type="Conexion" visibility="private" isStatic="true"/>
         <Field name="procedure" type="CallableStatement" visibility="private" isStatic="true"/>
@@ -299,16 +299,52 @@
         <Method name="getProcedure" returnType="CallableStatement" visibility="public"/>
       </Methods>
     </Class>
+    <Class name="Usuario" package="" visibility="public" xPosition="1209.0" yPosition="32.0">
+      <Fields>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="nickname" type="String" visibility="private"/>
+        <Field name="level" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="ListarPlatillosCategoria" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ciente" package="" visibility="public" xPosition="1012.0" yPosition="306.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="listarPlatilloCategoria" returnType="void" visibility="public"/>
+        <Method name="buscarPlatillo" returnType="void" visibility="public"/>
+        <Method name="comprar" returnType="String" visibility="public">
+          <Argument type="String" name="formaDePago"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Asistente" package="" visibility="public" xPosition="1339.0" yPosition="279.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="listarPlatilloCategoria" returnType="void" visibility="public"/>
+        <Method name="listarPlatillo" returnType="void" visibility="public"/>
+        <Method name="AgregarPlatillo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.AsistenteController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.ListarCategoriasCLIEController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="Tiene" source="sistemasbares.LogginController" target="Conexion" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.Main" target="sistemasbares.LogginController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.BuscarController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarPlatillosController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.ClienteController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarCategoriasASISController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.ListarCategoriasCLIEController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.Main" target="sistemasbares.LogginController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Ciente" target="Usuario"/>
+    <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.BuscarController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.ClienteController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Tiene" source="sistemasbares.Main" target="Usuario" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.AsistenteController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarPlatillosController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.AgregarPlatilloController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Asistente" target="Usuario"/>
   </ClassDiagramRelations>
 </ClassDiagram>
