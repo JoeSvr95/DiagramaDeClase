@@ -72,7 +72,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="BuscarController" package="sistemasbares" visibility="public" xPosition="892.0" yPosition="864.0">
+    <Class name="BuscarController" package="sistemasbares" visibility="public" xPosition="885.0" yPosition="1046.0">
       <Fields>
         <Field name="txtBusqueda" type="TextField" visibility="private"/>
         <Field name="btnBuscar" type="Button" visibility="private"/>
@@ -100,7 +100,7 @@
         <Method name="limpiar" returnType="void" visibility="private"/>
       </Methods>
     </Class>
-    <Class name="ClienteController" package="sistemasbares" visibility="public" xPosition="870.0" yPosition="474.0">
+    <Class name="ClienteController" package="sistemasbares" visibility="public" xPosition="870.0" yPosition="683.0">
       <Fields>
         <Field name="menuBar" type="MenuBar" visibility="private"/>
         <Field name="menuBuscar" type="Menu" visibility="private"/>
@@ -173,7 +173,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="ListarCategoriasCLIEController" package="sistemasbares" visibility="public" xPosition="1294.0" yPosition="446.0">
+    <Class name="ListarCategoriasCLIEController" package="sistemasbares" visibility="public" xPosition="1333.0" yPosition="655.0">
       <Fields>
         <Field name="cmbCategorias" type="ComboBox" visibility="private"/>
         <Field name="lstPlatillos" type="ListView" visibility="private"/>
@@ -201,7 +201,7 @@
         <Method name="limpiar" returnType="void" visibility="private"/>
       </Methods>
     </Class>
-    <Class name="ListarPlatillosController" package="sistemasbares" visibility="public" xPosition="516.0" yPosition="735.0">
+    <Class name="ListarPlatillosController" package="sistemasbares" visibility="public" xPosition="422.0" yPosition="788.0">
       <Fields>
         <Field name="lstPlatillos" type="ListView" visibility="private"/>
         <Field name="txtDescripcion" type="TextArea" visibility="private"/>
@@ -299,7 +299,7 @@
         <Method name="getProcedure" returnType="CallableStatement" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Usuario" package="" visibility="public" xPosition="1209.0" yPosition="32.0">
+    <Class name="Usuario" package="" visibility="public" xPosition="1493.0" yPosition="60.0">
       <Fields>
         <Field name="id" type="String" visibility="private"/>
         <Field name="nombre" type="String" visibility="private"/>
@@ -312,7 +312,7 @@
         <Method name="ListarPlatillosCategoria" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Ciente" package="" visibility="public" xPosition="1012.0" yPosition="306.0">
+    <Class name="Ciente" package="" visibility="public" xPosition="971.0" yPosition="475.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -323,7 +323,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Asistente" package="" visibility="public" xPosition="1339.0" yPosition="279.0">
+    <Class name="Asistente" package="" visibility="public" xPosition="1037.0" yPosition="257.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -332,19 +332,44 @@
         <Method name="AgregarPlatillo" returnType="void" visibility="public"/>
       </Methods>
     </Class>
+    <Class name="UsuarioBuilder" package="" visibility="public" xPosition="1445.0" yPosition="367.0">
+      <Fields>
+        <Field name="user" type="Usuario" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getUser" returnType="Usuario" visibility="public"/>
+        <Method name="crearNuevoUsuario" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UsuarioDirector" package="" visibility="public" xPosition="1206.0" yPosition="53.0">
+      <Fields>
+        <Field name="builder" type="UsuarioBuilder" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setUsuarioBuilder" returnType="void" visibility="public"/>
+        <Method name="getUsuario" returnType="void" visibility="public"/>
+        <Method name="construirUsuario" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <HasRelation name="Tiene" source="sistemasbares.LogginController" target="Conexion" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarCategoriasASISController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.ListarCategoriasCLIEController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="UsuarioDirector" target="Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.Main" target="sistemasbares.LogginController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="Ciente" target="Usuario"/>
+    <IsRelation name="is" source="Asistente" target="UsuarioBuilder"/>
+    <HasRelation name="builder" source="UsuarioDirector" target="UsuarioBuilder" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarPlatillosController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarCategoriasASISController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Ciente" target="UsuarioBuilder"/>
+    <HasRelation name="Tiene" source="sistemasbares.LogginController" target="Conexion" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.ListarCategoriasCLIEController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Tiene" source="sistemasbares.Main" target="UsuarioDirector" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.AsistenteController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Tiene" source="sistemasbares.Main" target="Asistente" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.BuscarController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.ClienteController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Tiene" source="sistemasbares.Main" target="Usuario" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.AsistenteController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarPlatillosController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.AgregarPlatilloController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="Asistente" target="Usuario"/>
+    <HasRelation name="Tiene" source="sistemasbares.Main" target="Ciente" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
