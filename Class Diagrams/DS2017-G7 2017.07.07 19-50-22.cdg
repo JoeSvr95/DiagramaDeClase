@@ -37,7 +37,7 @@
         <Method name="limpiar" returnType="void" visibility="private"/>
       </Methods>
     </Class>
-    <Class name="AsistenteController" package="sistemasbares" visibility="public" xPosition="25.0" yPosition="554.0">
+    <Class name="AsistenteController" package="sistemasbares" visibility="public" xPosition="47.0" yPosition="525.0">
       <Fields>
         <Field name="menuBar" type="MenuBar" visibility="private"/>
         <Field name="menuAgregarPlatillo" type="Menu" visibility="private"/>
@@ -72,7 +72,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="BuscarController" package="sistemasbares" visibility="public" xPosition="878.0" yPosition="1058.0">
+    <Class name="BuscarController" package="sistemasbares" visibility="public" xPosition="818.0" yPosition="978.0">
       <Fields>
         <Field name="txtBusqueda" type="TextField" visibility="private"/>
         <Field name="btnBuscar" type="Button" visibility="private"/>
@@ -100,7 +100,7 @@
         <Method name="limpiar" returnType="void" visibility="private"/>
       </Methods>
     </Class>
-    <Class name="ClienteController" package="sistemasbares" visibility="public" xPosition="870.0" yPosition="683.0">
+    <Class name="ClienteController" package="sistemasbares" visibility="public" xPosition="851.0" yPosition="563.0">
       <Fields>
         <Field name="menuBar" type="MenuBar" visibility="private"/>
         <Field name="menuBuscar" type="Menu" visibility="private"/>
@@ -132,7 +132,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="ListarCategoriasASISController" package="sistemasbares" visibility="public" xPosition="32.0" yPosition="1094.0">
+    <Class name="ListarCategoriasASISController" package="sistemasbares" visibility="public" xPosition="40.0" yPosition="1005.0">
       <Fields>
         <Field name="lstPlatillos" type="ListView" visibility="private"/>
         <Field name="txtDescripcion" type="TextArea" visibility="private"/>
@@ -176,7 +176,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="ListarCategoriasCLIEController" package="sistemasbares" visibility="public" xPosition="1346.0" yPosition="588.0">
+    <Class name="ListarCategoriasCLIEController" package="sistemasbares" visibility="public" xPosition="1270.0" yPosition="782.0">
       <Fields>
         <Field name="cmbCategorias" type="ComboBox" visibility="private"/>
         <Field name="lstPlatillos" type="ListView" visibility="private"/>
@@ -204,7 +204,7 @@
         <Method name="limpiar" returnType="void" visibility="private"/>
       </Methods>
     </Class>
-    <Class name="ListarPlatillosController" package="sistemasbares" visibility="public" xPosition="422.0" yPosition="788.0">
+    <Class name="ListarPlatillosController" package="sistemasbares" visibility="public" xPosition="442.0" yPosition="706.0">
       <Fields>
         <Field name="lstPlatillos" type="ListView" visibility="private"/>
         <Field name="txtDescripcion" type="TextArea" visibility="private"/>
@@ -244,7 +244,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="LogginController" package="sistemasbares" visibility="public" xPosition="454.0" yPosition="418.0">
+    <Class name="LogginController" package="sistemasbares" visibility="public" xPosition="434.0" yPosition="397.0">
       <Fields>
         <Field name="lblNada" type="Label" visibility="private"/>
         <Field name="txtUsuario" type="TextField" visibility="private"/>
@@ -268,7 +268,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Main" package="sistemasbares" visibility="public" xPosition="759.0" yPosition="82.0">
+    <Class name="Main" package="sistemasbares" visibility="public" xPosition="713.0" yPosition="60.0">
       <Fields>
         <Field name="root" type="Parent" visibility="private" isStatic="true"/>
         <Field name="scene" type="Scene" visibility="private" isStatic="true"/>
@@ -285,7 +285,7 @@
         <Method name="logout" returnType="void" visibility="public" isStatic="true"/>
       </Methods>
     </Class>
-    <Class name="Conexion" package="" visibility="public" xPosition="442.0" yPosition="53.0">
+    <Class name="Conexion" package="" visibility="public" xPosition="434.0" yPosition="87.0">
       <Fields>
         <Field name="instance" type="Conexion" visibility="private" isStatic="true"/>
         <Field name="procedure" type="CallableStatement" visibility="private" isStatic="true"/>
@@ -302,7 +302,7 @@
         <Method name="getProcedure" returnType="CallableStatement" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Usuario" package="" visibility="public" xPosition="1487.0" yPosition="34.0">
+    <Class name="Usuario" package="" visibility="public" xPosition="1581.0" yPosition="286.0">
       <Fields>
         <Field name="id" type="String" visibility="private"/>
         <Field name="nombre" type="String" visibility="private"/>
@@ -315,18 +315,18 @@
         <Method name="ListarPlatillosCategoria" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Ciente" package="" visibility="public" xPosition="987.0" yPosition="475.0">
+    <Class name="Ciente" package="" visibility="public" xPosition="831.0" yPosition="385.0">
       <Fields/>
       <Constructors/>
       <Methods>
         <Method name="listarPlatilloCategoria" returnType="void" visibility="public"/>
         <Method name="buscarPlatillo" returnType="void" visibility="public"/>
-        <Method name="comprar" returnType="FormaDePago" visibility="public">
-          <Argument type="FormaDePago" name="pago"/>
+        <Method name="comprar" returnType="FormaDePagoStrategy" visibility="public">
+          <Argument type="FormaDePagoStrategy" name="pago"/>
         </Method>
       </Methods>
     </Class>
-    <Class name="Asistente" package="" visibility="public" xPosition="1161.0" yPosition="278.0">
+    <Class name="Asistente" package="" visibility="public" xPosition="1035.0" yPosition="224.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -335,7 +335,7 @@
         <Method name="AgregarPlatillo" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="UsuarioBuilder" package="" visibility="public" xPosition="1451.0" yPosition="383.0">
+    <Class name="UsuarioBuilder" package="" visibility="public" xPosition="1334.0" yPosition="314.0">
       <Fields>
         <Field name="user" type="Usuario" visibility="protected"/>
       </Fields>
@@ -345,7 +345,7 @@
         <Method name="crearNuevoUsuario" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="UsuarioDirector" package="" visibility="public" xPosition="1206.0" yPosition="53.0">
+    <Class name="UsuarioDirector" package="" visibility="public" xPosition="1313.0" yPosition="98.0">
       <Fields>
         <Field name="builder" type="UsuarioBuilder" visibility="private"/>
       </Fields>
@@ -356,7 +356,7 @@
         <Method name="construirUsuario" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="TarjetaDeCredito" package="" visibility="public" xPosition="1720.0" yPosition="740.0">
+    <Class name="TarjetaDeCredito" package="" visibility="public" xPosition="1638.0" yPosition="706.0">
       <Fields>
         <Field name="nombre" type="String" visibility="private"/>
         <Field name="CVC" type="String" visibility="private"/>
@@ -375,7 +375,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Carnet" package="" visibility="public" xPosition="2132.0" yPosition="740.0">
+    <Class name="Carnet" package="" visibility="public" xPosition="2106.0" yPosition="844.0">
       <Fields>
         <Field name="matricula" type="String" visibility="private"/>
         <Field name="nombre" type="String" visibility="private"/>
@@ -396,13 +396,11 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="PedidosController" package="" visibility="public" xPosition="1346.0" yPosition="1077.0">
-      <Fields>
-        <Field name="untitledField" type="Object" visibility="private"/>
-      </Fields>
+    <Class name="PedidosController" package="" visibility="public" xPosition="1283.0" yPosition="590.0">
+      <Fields/>
       <Constructors/>
       <Methods>
-        <Method name="listarCategorias" returnType="Action" visibility="public">
+        <Method name="listarCategorias" returnType="ActionEvent" visibility="public">
           <Argument type="Action" name="Event"/>
         </Method>
         <Method name="mostrarInformacion" returnType="ActionEvent" visibility="public">
@@ -417,7 +415,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Platillo" package="" visibility="public" xPosition="2011.0" yPosition="40.0">
+    <Class name="Platillo" package="" visibility="public" xPosition="1861.0" yPosition="41.0">
       <Fields>
         <Field name="idPlatillo" type="String" visibility="private"/>
         <Field name="nombre" type="String" visibility="private"/>
@@ -445,7 +443,7 @@
         <Method name="getPrecio" returnType="Double" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Restaurante" package="" visibility="public" xPosition="2355.0" yPosition="503.0">
+    <Class name="Restaurante" package="" visibility="public" xPosition="2077.0" yPosition="41.0">
       <Fields>
         <Field name="idRestaurante" type="String" visibility="private"/>
         <Field name="nombre" type="String" visibility="private"/>
@@ -458,44 +456,28 @@
       <Constructors/>
       <Methods/>
     </Class>
-    <Class name="DecoratorAlimento" package="" visibility="public" xPosition="1720.0" yPosition="231.0">
+    <Class name="DecoratorAlimento" package="" visibility="public" xPosition="2445.0" yPosition="362.0">
       <Fields/>
       <Constructors/>
       <Methods>
         <Method name="getPrecio" returnType="Double" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Postre" package="" visibility="public" xPosition="1657.0" yPosition="401.0">
+    <Class name="Postre" package="" visibility="public" xPosition="2331.0" yPosition="135.0">
       <Fields/>
       <Constructors/>
       <Methods>
         <Method name="getPrecio" returnType="Double" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Bebida" package="" visibility="public" xPosition="1831.0" yPosition="401.0">
+    <Class name="Bebida" package="" visibility="public" xPosition="2500.0" yPosition="135.0">
       <Fields/>
       <Constructors/>
       <Methods>
         <Method name="getPrecio" returnType="Double" visibility="public"/>
       </Methods>
     </Class>
-    <Interface name="FormaDePago" package="" visibility="public" xPosition="2035.0" yPosition="524.0">
-      <Methods>
-        <Method name="pagar" returnType="void" visibility="public"/>
-      </Methods>
-    </Interface>
-    <Interface name="Alimento" package="" visibility="public" xPosition="1758.0" yPosition="34.0">
-      <Methods>
-        <Method name="getPrecio" returnType="Double" visibility="public"/>
-      </Methods>
-    </Interface>
-    <Interface name="Entidades" package="" visibility="public" xPosition="2193.0" yPosition="17.0">
-      <Methods>
-        <Method name="getDescripcion" returnType="void" visibility="public"/>
-        <Method name="getNombre" returnType="void" visibility="public"/>
-      </Methods>
-    </Interface>
-    <Class name="Sopa" package="" visibility="public" xPosition="2408.0" yPosition="17.0">
+    <Class name="Sopa" package="" visibility="public" xPosition="2328.0" yPosition="431.0">
       <Fields>
         <Field name="descripcion" type="String" visibility="private"/>
         <Field name="nombre" type="String" visibility="private"/>
@@ -506,7 +488,7 @@
         <Method name="getNombres" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Almuerzo" package="" visibility="public" xPosition="2216.0" yPosition="250.0">
+    <Class name="Almuerzo" package="" visibility="public" xPosition="2368.0" yPosition="611.0">
       <Fields>
         <Field name="almuerzo" type="ArrayList" visibility="private"/>
         <Field name="descripcion" type="String" visibility="private"/>
@@ -514,44 +496,86 @@
       </Fields>
       <Constructors/>
       <Methods>
-        <Method name="addComponentes" returnType="void" visibility="public">
+        <Method name="addComponentes" returnType="Object" visibility="public">
           <Argument type="Object" name="obj"/>
         </Method>
         <Method name="getDescripciones" returnType="void" visibility="public"/>
         <Method name="getNombre" returnType="void" visibility="public"/>
       </Methods>
     </Class>
+    <Class name="AdminsitradorCarnetController" package="" visibility="public" xPosition="1193.0" yPosition="1207.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="ingresarNotaDebito" returnType="ActionEvent" visibility="public">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="ingresarNotaCredito" returnType="ActionEvent" visibility="public">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="consultaDeSaldos" returnType="ActionEvent" visibility="public">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="conulstaDeMovimientos" returnType="void" visibility="public">
+          <Argument type="Date" name="inicio"/>
+          <Argument type="Date" name="fin"/>
+        </Method>
+        <Method name="solicitarCarnet" returnType="void" visibility="public">
+          <Argument type="String" name="matricula"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="FormaDePagoStrategy" package="" visibility="public" xPosition="1730.0" yPosition="531.0">
+      <Methods>
+        <Method name="pagar" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Alimento" package="" visibility="public" xPosition="2106.0" yPosition="286.0">
+      <Methods>
+        <Method name="getPrecio" returnType="Double" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Entidades" package="" visibility="public" xPosition="2003.0" yPosition="551.0">
+      <Methods>
+        <Method name="getDescripcion" returnType="void" visibility="public"/>
+        <Method name="getNombre" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <HasRelation name="Tiene" source="sistemasbares.LogginController" target="Conexion" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarCategoriasASISController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.ClienteController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Has" source="DecoratorAlimento" target="Alimento" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
     <IsRelation name="is" source="Ciente" target="UsuarioBuilder"/>
-    <HasRelation name="Tiene" source="sistemasbares.Main" target="Ciente" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="DecoratorAlimento" target="Alimento"/>
-    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.AsistenteController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="Asistente" target="UsuarioBuilder"/>
-    <UseRelation name="" source="UsuarioDirector" target="Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="Bebida" target="DecoratorAlimento"/>
-    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Sopa" target="Entidades"/>
-    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Almuerzo" target="Entidades"/>
-    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.AgregarPlatilloController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Carnet" target="FormaDePago"/>
-    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarPlatillosController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="Postre" target="DecoratorAlimento"/>
-    <UseRelation name="Usa" source="FormaDePago" target="Ciente" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="Tiene" source="Restaurante" target="Platillo" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <UseRelation name="Usa" source="sistemasbares.Main" target="sistemasbares.LogginController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Has" source="Almuerzo" target="Entidades" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <HasRelation name="Tiene" source="sistemasbares.Main" target="Asistente" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Almuerzo" target="Entidades"/>
+    <HasRelation name="builder" source="UsuarioDirector" target="UsuarioBuilder" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
     <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.BuscarController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="Tiene" source="sistemasbares.Main" target="UsuarioDirector" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarPlatillosController" sourceCardinality="1..1" targetCardinality="1..1"/>
     <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Platillo" target="Alimento"/>
-    <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.ListarCategoriasCLIEController" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="builder" source="UsuarioDirector" target="UsuarioBuilder" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="TarjetaDeCredito" target="FormaDePago"/>
-    <UseRelation name="" source="sistemasbares.ClienteController" target="PedidosController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Has" source="DecoratorAlimento" target="Alimento" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Has" source="Almuerzo" target="Entidades" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Tiene" source="sistemasbares.LogginController" target="Conexion" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Bebida" target="DecoratorAlimento"/>
+    <HasRelation name="Tiene" source="sistemasbares.Main" target="Ciente" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Carnet" target="FormaDePagoStrategy"/>
+    <HasRelation name="Tiene" source="sistemasbares.Main" target="Restaurante" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
     <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Platillo" target="Entidades"/>
+    <IsRelation name="is" source="Asistente" target="UsuarioBuilder"/>
+    <HasRelation name="Tiene" source="sistemasbares.Main" target="Asistente" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="PedidosController" target="FormaDePagoStrategy" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.ListarCategoriasASISController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="FormaDePagoStrategy" target="Ciente" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.ClienteController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="TarjetaDeCredito" target="FormaDePagoStrategy"/>
+    <UseRelation name="" source="sistemasbares.ClienteController" target="PedidosController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.LogginController" target="sistemasbares.AsistenteController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.Main" target="sistemasbares.LogginController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.ClienteController" target="AdminsitradorCarnetController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.ClienteController" target="sistemasbares.ListarCategoriasCLIEController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Usa" source="sistemasbares.AsistenteController" target="sistemasbares.AgregarPlatilloController" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="DecoratorAlimento" target="Alimento"/>
+    <UseRelation name="" source="UsuarioDirector" target="Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Tiene" source="sistemasbares.Main" target="Platillo" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <IsRelation name="is" source="Postre" target="DecoratorAlimento"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Sopa" target="Entidades"/>
   </ClassDiagramRelations>
 </ClassDiagram>
